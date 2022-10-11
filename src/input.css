@@ -9,12 +9,20 @@
 
 @layer components {
     /*自組元件*/
-    .btn-primary{
+    .btn-secondary{
         @apply text-white px-8 py-2 bg-secondary rounded-3xl
+    }
+    .btn-primary{
+        @apply text-white text-lg px-8 py-3 bg-primary rounded-3xl
+    }
+    .container {
+        @apply  minmd:max-w-[736px] minlg:max-w-[808px] minxl:max-w-[1128px] ;
     }
 }
 
 @layer utilities{
     /*自組樣式*/
-
+    .shadow-style{
+        @apply shadow-[0_2px_10px_0px] shadow-[#00000014] 
+    }
 }

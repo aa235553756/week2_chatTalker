@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="outline-black outline-1">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +13,201 @@
     <!--                 bs5xl 1200以上 -->
     <!-- Pad    1200~700 bs5md 768以上-->
     <!-- mobile container 334  +padding20x2  = 374(375) -->
-
-    <section class="container h-screen bg-[url('../images/home.svg'),_url('../images/bg_home_sm.svg')] bg-no-repeat bg-[position:center_bottom_38.5px,center_bottom_2rem] bg-[length:305px,334px]">
-        <!-- <img src="../images/home.svg" alt=""> -->
-        <!-- <img src="../images/bg_home_sm.svg" alt=""> -->
-        <header class="flex items-center justify-between py-4 bg-red-100 border-b-2 border-b-lightYellow">
-            <a href="index.html"><img src="../images/logo.png" alt="logo" width="130px"></a>
-            <button class="btn-primary">方案費用</button>
+    <div class="
+    <!-- xl:banner幾何圖型背景 -->
+    xl:bg-[url('../images/bg_home.svg')] 
+    xl:bg-[position:right_top]
+    xl:bg-[length:850px,100vh]
+    xl:bg-no-repeat
+    ">
+        <header class="py-4 border-b-2 border-b-lightYellow xl:border-none">
+            <div class="container flex items-center justify-between"> 
+                <a href="index.html"><img src="../images/logo.png" alt="logo" width="130px"></a>
+                <button class="btn-secondary">方案費用</button>
+            </div>
         </header>
-        <div class="pt-8 md:h-[calc(100%-118px)] md:flex md:flex-col md:justify-center">
-            <p class="text-primary font-bold mb-2">ChatTalker 最全面的聊天機器人</p>
-            <h1 class="text-[32px] leading-[46px] font-bold mb-4">
-                你愛我像誰？
-                <br>
-                扮演什麼角色我都會
-            </h1>
-            <p>Facebook、Instagram、LINE 聊天機器人解決方案</p>
-        </div>
-    </section>
+        <main class="
+            <!-- xl:banner圓球 -->
+            xl:after:content-['']
+            xl:after:block
+            xl:after:bg-[url('../images/ball01.svg')]
+            xl:after:bg-[position:right_top]
+            xl:after:absolute
+            xl:after:top-[calc(100vh-180px)]
+            xl:after:w-[131px]
+            xl:after:h-[360px]
+            ">
+            <section class="container mb-[60px] h-screen 
+            bg-[url('../images/home.svg'),_url('../images/bg_home_sm.svg')] 
+            bg-no-repeat 
+            bg-[position:center_bottom_38.5px,center_bottom_2rem] 
+            bg-[length:305px,334px]
+            <!-- xl:banner卡通人像刪除 -->
+            xl:bg-none        
+            ">
+                <!-- <img src="../images/home.svg" alt=""> -->
+                <!-- <img src="../images/bg_home_sm.svg" alt=""> -->
+                <!-- <img src="../images/bg_home.svg" alt=""> -->
+    
+                <div class="pt-8 xl:h-[calc(100%-118px)] xl:flex xl:flex-col xl:justify-center
+                <!-- xl:banner卡通人像增加 -->
+                xl:bg-[url('../images/home.svg')]
+                xl:bg-[length:532px]
+                xl:bg-[position:right_top]
+                xl:bg-no-repeat
+                ">
+                    <p class="text-primary font-bold mb-2">ChatTalker 最全面的聊天機器人</p>
+                    <h1 class="text-[32px] leading-[46px] font-bold mb-4">
+                        你愛我像誰？
+                        <br>
+                        扮演什麼角色我都會
+                    </h1>
+                    <p>Facebook、Instagram、LINE 聊天機器人解決方案</p>
+                </div>
+            </section>
+            <section class="
+            mb-[60px]
+            relative
+            after:content-['']
+            after:block
+            after:w-[49px]
+            after:h-[126px]
+            after:absolute
+            after:top-[15px]
+            after:bg-[url(../images/ball01.svg)]
+            after:bg-[length:126px,126px]
+            after:bg-[position:right_bottom]
+            xl:after:content-[]
+            ">
+                <div class="container xl:w-[1009px]">
+                    <h2 class="font-bold text-center text-[28px] xl:text-[32px] mb-8">三大平台，我來搞定</h2>
+                    <div class="md:flex md:justify-between">
+                        <div class="mb-6">
+                            <img src="../images/messenger.svg" alt="messenger-logo" width="60px" class="mb-4 mx-auto">
+                            <h3 class="text-lg xl:text-2xl font-bold text-center mb-4">Facebook Messenger</h3>
+                            <p class="text-gray-300 text-center">結合粉絲專頁，提高粉絲互動率<br>有效經營品牌社群</p>
+                        </div>
+                        <div class="mb-6">
+                            <img src="../images/line.svg" alt="messenger-logo" width="60px" class="mb-4 mx-auto">
+                            <h3 class="text-lg xl:text-2xl font-bold text-center mb-4">LINE官方帳號</h3>
+                            <p class="text-gray-300 text-center">融入日常生活，精準傳遞品牌資訊<br>打造個人化專屬服務</p>
+                        </div>
+                        <div class="">
+                            <img src="../images/messenger.svg" alt="messenger-logo" width="60px" class="mb-4 mx-auto">
+                            <h3 class="text-lg xl:text-2xl font-bold text-center mb-4">Instagram</h3>
+                            <p class="text-gray-300 text-center">貼近粉絲，提升品牌自然聲量<br>行銷、抽獎一站完成</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-[60px]
+            relative
+            after:content-['']
+            after:block
+            after:w-[88px]
+            after:h-[135px]
+            after:absolute
+            after:right-0
+            after:bottom-0
+            after:-z-10
+            after:bg-[url('../images/ball02.svg')]
+            after:bg-[length:135px,135px]
+            xl:after:w-[210px]
+            xl:after:h-[310px]
+            xl:after:bottom-[-165px]
+            xl:after:bg-[length:310px,310px]
+            ">
+                <div class="container">
+                    <h2 class="font-bold text-center text-[28px] xl:text-[32px] mb-4">任何的角色，我都能給</h2>
+                    <h3 class="text-center text-lg xl:text-xl mb-8 xl:mb-12">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</h3>
+                    <div class="flex flex-wrap gap-4 gap-y-6 justify-center">
+                        <div class="
+                        bg-white
+                        shadow-[0_2px_10px_0px] 
+                        shadow-[#00000014] 
+                        rounded-xl">
+                            <img src="../images/ch01.svg" alt="ch-01" class="mb-4 rounded-t-xl" width="260px">
+                            <div class="px-4">
+                                <h4 class="mb-4 text-center text-primary">活動主</h4>
+                                <p class="mb-6 text-center">用戶數位足跡掌握在手<br>精準取得客戶輪廓，提供分析</p>
+                            </div>
+                        </div>
+                        <div class="
+                        bg-white
+                        shadow-[0_2px_10px_0px] 
+                        shadow-[#00000014] 
+                        rounded-xl">
+                            <img src="../images/ch02.svg" alt="ch-02" class="mb-4 rounded-t-xl" width="260px">
+                            <div class="px-4">
+                                <h4 class="mb-4 text-center text-primary">創作者</h4>
+                                <p class="mb-6 text-center">多元資料整合，做出服務差異化<br>幫助企業加速決策</p>
+                            </div>
+                        </div>
+                        <div class="
+                        bg-white
+                        shadow-[0_2px_10px_0px] 
+                        shadow-[#00000014] 
+                        rounded-xl">
+                            <img src="../images/ch03.svg" alt="ch-03" class="mb-4 rounded-t-xl" width="260px">
+                            <div class="px-4">
+                                <h4 class="mb-4 text-center text-primary">企業品牌</h4>
+                                <p class="mb-6 text-center">多元資料整合，做出服務差異化<br>幫助企業加速決策</p>
+                            </div>
+                        </div>
+                        <div class="
+                        bg-white
+                        shadow-[0_2px_10px_0px] 
+                        shadow-[#00000014] 
+                        rounded-xl">
+                            <img src="../images/ch04.svg" alt="ch-04" class="mb-4 rounded-t-xl" width="260px">
+                            <div class="px-4">
+                                <h4 class="mb-4 text-center text-primary">其他</h4>
+                                <p class="mb-6 text-center">創造更多可能...<br>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-[60px]">
+                <div class="container xl:flex xl:justify-between xl:items-center">
+                    <div class="xl:h-[264px] xl:order-1">
+                        <h2 class="font-bold text-[28px] xl:text-[32px] mb-4 text-center xl:text-left">快速了解客戶輪廓<br>建立品牌流量池</h2>
+                        <p class="xl:text-lg mb-4 text-center xl:text-left">深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</p>
+                        <button class="btn-primary block mx-auto xl:mx-0">方案費用</button>
+                    </div>
+                    <div class="flex flex-wrap justify-center mt-8 xl:mt-0 gap-6 xl:gap-y-7 xl:gap-x-12 xl:w-[508px]">
+                        <div class="pt-8 pb-12 px-6 shadow-style rounded-xl w-[230px]">
+                            <div class="w-[86px] h-[86px] rounded-full shadow-style mb-6">
+                                <img src="../images/icon01.svg" alt="icon01" width="52px" class="relative top-[17px] left-[24px]">
+                            </div>
+                            <h4 class="text-lg mb-5">無敵轉換術</h4>
+                            <p>精準掌握客群來源<br> 分析用戶轉化流程</p>
+                        </div>
+                        <div class="pt-8 pb-12 px-6 shadow-style rounded-xl w-[230px]">
+                            <div class="w-[86px] h-[86px] rounded-full shadow-style mb-6">
+                                <img src="../images/icon02.svg" alt="icon02" width="52px" class="relative top-[17px] left-[24px]">
+                            </div>
+                            <h4 class="text-lg mb-5">一站式訊息中心</h4>
+                            <p>整合Messenger、LINE<br>和IG三大平台訊息</p>
+                        </div>
+                        <div class="pt-8 pb-12 px-6 shadow-style rounded-xl w-[230px]">
+                            <div class="w-[86px] h-[86px] rounded-full shadow-style mb-6">
+                                <img src="../images/icon03.svg" alt="icon03" width="52px" class="relative top-[17px] left-[24px]">
+                            </div>
+                            <h4 class="text-lg mb-5">聊天機器人</h4>
+                            <p>66款聊天機器人模組<br>自由設計聊天流程</p>
+                        </div>
+                        <div class="pt-8 pb-12 px-6 shadow-style rounded-xl w-[230px]">
+                            <div class="w-[86px] h-[86px] rounded-full shadow-style mb-6">
+                                <img src="../images/icon04.svg" alt="icon04" width="52px" class="relative top-[17px] left-[24px]">
+                            </div>
+                            <h4 class="text-lg mb-5">群發訊息</h4>
+                            <p>自由選定特定受眾<br>精準推送群發訊息</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
