@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatTalker TailwindTest</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <!-- PC     container 1088 +padding139x2 = 1366 -->
+    <!--                 bs5xl 1200以上 -->
+    <!-- Pad    1200~700 bs5md 768以上-->
+    <!-- mobile container 334  +padding20x2  = 374(375) -->
+
+    <section class="container h-screen bg-[url('../images/home.svg'),_url('../images/bg_home_sm.svg')] bg-no-repeat bg-[position:center_bottom_38.5px,center_bottom_2rem] bg-[length:305px,334px]">
+        <!-- <img src="../images/home.svg" alt=""> -->
+        <!-- <img src="../images/bg_home_sm.svg" alt=""> -->
+        <header class="flex items-center justify-between py-4 bg-red-100 border-b-2 border-b-lightYellow">
+            <a href="index.html"><img src="../images/logo.png" alt="logo" width="130px"></a>
+            <button class="btn-primary">方案費用</button>
+        </header>
+        <div class="pt-8 md:h-[calc(100%-118px)] md:flex md:flex-col md:justify-center">
+            <p class="text-primary font-bold mb-2">ChatTalker 最全面的聊天機器人</p>
+            <h1 class="text-[32px] leading-[46px] font-bold mb-4">
+                你愛我像誰？
+                <br>
+                扮演什麼角色我都會
+            </h1>
+            <p>Facebook、Instagram、LINE 聊天機器人解決方案</p>
+        </div>
+    </section>
+</body>
+</html>

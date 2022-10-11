@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /*擴充專案的全站樣式*/
+
+}
+
+@layer components {
+    /*自組元件*/
+    .btn-primary{
+        @apply text-white px-8 py-2 bg-secondary rounded-3xl
+    }
+}
+
+@layer utilities{
+    /*自組樣式*/
+
+}
