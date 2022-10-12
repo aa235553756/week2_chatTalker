@@ -16,6 +16,9 @@
         @apply text-white text-lg px-8 py-3 bg-primary rounded-3xl
     }
     .container {
+        /* 992or984or808 808稍微大，但是是平板，1366也稍微大 */
+        /* 1024-40=984 */
+        /* 768-40=728 */
         @apply  minmd:max-w-[736px] minlg:max-w-[808px] minxl:max-w-[1128px] ;
     }
 }
