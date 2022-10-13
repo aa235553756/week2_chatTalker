@@ -13,13 +13,16 @@
         @apply text-white px-8 py-2 bg-secondary rounded-3xl
     }
     .btn-primary{
-        @apply text-white text-lg px-8 py-3 bg-primary rounded-3xl
+        @apply text-white text-lg px-8 py-3 bg-primary rounded-3xl flex-shrink-0
+    }
+    .btn-primary--unActive{
+        @apply text-primary text-lg px-8 py-3 bg-transparent rounded-3xl border border-primary flex-shrink-0
     }
     .container {
         /* 992or984or808 808稍微大，但是是平板，1366也稍微大 */
         /* 1024-40=984 */
         /* 768-40=728 */
-        @apply  minmd:max-w-[736px] minlg:max-w-[808px] minxl:max-w-[1128px] ;
+        @apply  minmd:max-w-[736px] minlg:max-w-[808px] minxl:max-w-[1128px]
     }
 }
 
