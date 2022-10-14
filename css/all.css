@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&display=swap");
 .bg-scss {
   background: lightgreen;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFD153;
+  width: 16px;
+  border-radius: 16px;
 }/*# sourceMappingURL=all.css.map */

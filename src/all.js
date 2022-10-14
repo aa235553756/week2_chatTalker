@@ -18,7 +18,6 @@ $(document).ready(function(){
 
     $('.btn_price').click(function(){
 
-        console.log(this);
         $('.btn-primary--unActive').removeClass('btn-primary')
         $(this).addClass('btn-primary')
 
@@ -35,28 +34,18 @@ $(document).ready(function(){
         }
 
     })
+
+    $('.scroll_btn').click(function(){
+        $('html').animate({
+            scrollTop:0
+        },300)
+    })
+
 })
 
 var swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
     loop: true,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination'
     },
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev'
-    // } 
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-  
   });
